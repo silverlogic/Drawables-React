@@ -1,22 +1,453 @@
-<!doctype html>
-<html>
-  <head>
-    <meta charset="utf-8" />
-
-    <title>Welcome to ReactHack</title>
-    <meta name="viewport" content="width=device-width" />
-
-    <!-- We include jQuery only for the Parse SDK and Bootstrap; it's not needed for React. -->
-    <script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
-    <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.min.css"></script>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Drawables.club</title>
+    <!-- Meta -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">    
+    <link rel="shortcut icon" href="favicon.ico">  
+    <link href='http://fonts.googleapis.com/css?family=Lato:300,400,300italic,400italic' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'> 
+    <link rel="stylesheet" href="assets/plugins/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/plugins/font-awesome/css/font-awesome.css">
+    <link rel="stylesheet" href="assets/plugins/prism/prism.css">
+    <link id="theme-style" rel="stylesheet" href="assets/css/devaidstyles.css">
     <link rel="stylesheet" href="main.css">
-    <script type="text/javascript" src="http://netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/js/bootstrap.min.js"></script>
-  </head>
+</head> 
 
-  <body>
-    <div id="react-root">
+<body data-spy="scroll">
+    
+    <!---//Facebook button code-->
+    <div id="fb-root"></div>
+    <script>(function(d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) return;
+      js = d.createElement(s); js.id = id;
+      js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.0";
+      fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));</script>
+    
+    <!-- ******HEADER****** --> 
+    <header id="header" class="header">  
+        <div class="container">            
+            <h1 class="logo pull-left">
+                <a class="scrollto" href="#promo">
+                    <span class="logo-title">Drawables<span style="font-size:12pt">.club</span>
+                </a>
+            </h1><!--//logo--> 
+            <nav id="main-nav" class="main-nav navbar-right" role="navigation">
+                <div class="navbar-header">
+                    <button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#navbar-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button><!--//nav-toggle-->
+                </div><!--//navbar-header-->            
+                <div class="navbar-collapse collapse" id="navbar-collapse">
+                    <ul class="nav navbar-nav">
+                        <li class="active nav-item sr-only"><a class="scrollto" href="#promo">Home</a></li>
+                        <li class="nav-item"><a class="scrollto" href="#about">About</a></li>
+                        <li class="nav-item"><a class="scrollto" href="#features">Reviews</a></li>
+                        <li class="nav-item"><a class="scrollto" href="#docs">FAQ</a></li>
+                        <!-- <li class="nav-item"><a class="scrollto" href="#license">Download</a></li>                         -->
+                        <li class="nav-item last"><a class="scrollto" href="#contact">Download</a></li>
+                    </ul><!--//nav-->
+                </div><!--//navabr-collapse-->
+            </nav><!--//main-nav-->             
+        </div>
+    </header><!--//header-->
+    
+    <!-- ******PROMO****** -->
+    <section id="promo" class="promo section offset-header">
+        <div class="container text-center">
+            <h2 class="title">Draw<span class="highlight">ables</span><span style="font-size:18pt">.club</h2>
+            <p class="intro">Doodling on Selfies</p>
+            <div class="btns">
+                <!-- <a class="btn btn-cta-secondary" href="http://themes.3rdwavemedia.com/" target="_blank">Demo</a> -->
+                <a class="btn btn-cta-primary" href="https://itunes.apple.com/us/artist/apple/id284417353?mt=12" target="_blank">I Need This.</a>
+            </div>
+            <ul class="meta list-inline">
+                <li><a href="#" target="_blank"> </a></li>
+                <!-- <li><a href="https://github.com/twbs/bootstrap" target="_blank">Full Documentation</a></li> -->
+                <!-- <li>Created by: <a href="http://themes.3rdwavemedia.com/" target="_blank">Xiaoying Riley</a> at 3rd Wave Media</li> -->
+            </ul><!-- //meta -->
+        </div><!-- //container -->
+        <div class="social-media">
+            <div class="social-media-inner container text-center">
+                <ul class="list-inline">
+                    <!-- <li class="twitter-follow"><a href="https://twitter.com/3rdwave_themes" class="twitter-follow-button" data-show-count="false">Follow @3rdwave_themes</a> -->
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+                    </li><!--//twitter-follow-->
+                    <li class="twitter-tweet">
+                        <!-- <a href="https://twitter.com/share" class="twitter-share-button" data-via="3rdwave_themes" data-hashtags="bootstrap">Tweet</a> -->
+    <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+                    <!-- </li>//twitter-tweet -->
+                    <!-- <li class="facebook-like"> -->
+                         <!-- <div class="fb-like" data-href="http://themes.3rdwavemedia.com/" data-layout="button_count" data-action="like" data-show-faces="false" data-share="true"></div> -->
+                    <!-- </li>//facebook-like -->
+                    <!--// Generate github buttons: https://github.com/mdo/github-buttons -->
+                    <!-- <li class="github-star"><iframe src="http://ghbtns.com/github-btn.html?user=mdo&repo=github-buttons&type=watch&count=true" allowtransparency="true" frameborder="0" scrolling="0" width="110" height="20"></iframe></li> -->
+                    <!-- <li class="github-fork"><iframe src="http://ghbtns.com/github-btn.html?user=mdo&repo=github-buttons&type=fork" allowtransparency="true" frameborder="0" scrolling="0" width="53" height="20"></iframe></li> -->
+                    <!--//
+                    <li class="github-follow"><iframe src="http://ghbtns.com/github-btn.html?user=mdo&type=follow&count=true"
+  allowtransparency="true" frameborder="0" scrolling="0" width="165" height="20"></iframe></li>
+                    -->
+                </ul>
+            </div>
+        </div>
+    </section><!--//promo-->
+    
+    <!-- ******ABOUT****** --> 
+    <section id="about" class="about section">
+        <div class="container">
+            <h2 class="title text-center">What is Drawables?</h2>
+            <p class="intro text-center">Send your Friends and Enemies pics by downloading Drawables. Let us send them your wonderful creation that is guaranteed to cheer/delight/horrify.</p>
+            <div class="row">
+                <div class="item col-md-4 col-sm-6 col-xs-12">
+                    <div class="icon-holder">
+                        <i class="fa fa-heart"></i>
+                    </div>
+                    <div class="content">
+                        <h3 class="sub-title">Doodlers Unite!</h3>
+                        <p>We love drawing. And Pictures.  And Facebook.  And Facebook Messenger.  Loads.</p>
+                        
+                    </div><!--//content-->
+                </div><!--//item-->
+                <div class="item col-md-4 col-sm-6 col-xs-12">
+                    <div class="icon-holder">
+                        <i class="fa fa-clock-o"></i>
+                    </div>
+                    <div class="content">
+                        <h3 class="sub-title">Social Media</h3>
+                        <p>We've had enough of not drawing on our selfies on Facebook Messenger so here's the deal: there's someone in your life right now who you need to send a selfie to.</p>
+                    </div><!--//content-->
+                </div><!--//item-->
+                <div class="item col-md-4 col-sm-6 col-xs-12">
+                    <div class="icon-holder">
+                        <i class="fa fa-crosshairs"></i>
+                    </div>
+                    <div class="content">
+                        <h3 class="sub-title">Messenger</h3>
+                        <p>So download Drawables (doodling on selfies), and send your friends innapropriate doodled-on selfies until they block you.</p> 
+                    </div><!--//content-->
+                </div><!--//item-->           
+                <div class="clearfix visible-md"></div>    
+                <div class="item col-md-4 col-sm-6 col-xs-12">
+                    <div class="icon-holder">
+                        <i class="fa fa-tablet"></i>
+                    </div>
+                    <div class="content">
+                        <h3 class="sub-title">Mobile-friendly</h3>
+                        <p>What we love more though are the social media users who get their social validation by sending friends pics in Facebook Messenger.</p>
+                    </div><!--//content-->
+                </div><!--//item-->                
+                <div class="item col-md-4 col-sm-6 col-xs-12">
+                    <div class="icon-holder">
+                        <i class="fa fa-code"></i>
+                    </div>
+                    <div class="content">
+                        <h3 class="sub-title">Facebook</h3>
+                        <p>Whether it be your best friend, worst enemy, a family member or that bitch Katie two dorms down who thinks it's cool to invite you to a Palm Bay TEDx but not provide any popsicles.</p>
+                    </div><!--//content-->
+                </div><!--//item-->
+                <div class="item col-md-4 col-sm-6 col-xs-12">
+                    <div class="icon-holder">
+                        <i class="fa fa-coffee"></i>
+                    </div>
+                    <div class="content">
+                        <h3 class="sub-title">It's Coloring.</h3>
+                        <p>People are calling Drawables (doodling on selfies) the most revolutionizing concept since the selfie stick.</p>
+                    </div><!--//content-->
+                </div><!--//item-->               
+            </div><!--//row-->            
+        </div><!--//container-->
+    </section><!--//about-->
+    
+    <!-- ******FEATURES****** --> 
+    <section id="features" class="features section">
+        <div class="container text-center">
+            <h2 class="title">Reviews</h2>
+            <div class="container">
+            <div class="row">
+                <div class="item col-md-4 col-sm-6 col-xs-12">
+                    <div class="icon-holder">
+                        <!-- <i class="fa fa-heart"></i> -->
+                    </div>
+                    <div class="content">
+                        <!-- <h3 class="sub-title">Doodlers Unite!</h3> -->
+                        <p>"For my 1 month anniversary I didn't know what to get my wife so I bought this thinking it would be funny. It wasn't, I'm now divorced, broke & living with my best friend. I'd like to talk with the owner to discuss damages. You can reply directly to this email address."</p>
+                        <h5>Kris Humphries</h5>
+
+                    </div><!--//content-->
+                </div><!--//item-->
+                <div class="item col-md-4 col-sm-6 col-xs-12">
+                    <div class="icon-holder">
+                        <!-- <i class="fa fa-clock-o"></i> -->
+                    </div>
+                    <div class="content">
+                        <!-- <h3 class="sub-title">Social Media</h3> -->
+                        <p>"I bought this for my husband, he opened my NSFW drawable at the office in front of his boss! He had to throw his phone in a fish bowl to stop the boss from seeing it.  We had to replace the phone and he might be getting fired, LOL!"</p>
+                        <h5>Rand Paul</h5>
+
+                    </div><!--//content-->
+                </div><!--//item-->
+                <div class="item col-md-4 col-sm-6 col-xs-12">
+                    <div class="icon-holder">
+                        <!-- <i class="fa fa-crosshairs"></i> -->
+                    </div>
+                    <div class="content">
+                        <!-- <h3 class="sub-title">Messenger</h3> -->
+                        <p>"I took the top spot on April Fools Day. Being crowned the queen of pranks has changed my life. Thanks Drawables!"</p>
+                        <h5>Al Pacino</h5>
+                    </div><!--//content-->
+                </div><!--//item-->           
+                <div class="clearfix visible-md"></div>    
+                <div class="item col-md-4 col-sm-6 col-xs-12">
+                    <div class="icon-holder">
+                        <!-- <i class="fa fa-tablet"></i> -->
+                    </div>
+                    <div class="content">
+                        <!-- <h3 class="sub-title">It's Coloring.</h3> -->
+                        <p>"Daleeeeeeee"</p>
+                        <h5>Pit Bull</h5>
+                    </div><!--//content-->
+                </div><!--//item-->                
+                <div class="item col-md-4 col-sm-6 col-xs-12">
+                    <div class="icon-holder">
+                        <!-- <i class="fa fa-code"></i> -->
+                    </div>
+                    <div class="content">
+                        <!-- <h3 class="sub-title">Facebook</h3> -->
+                        <p>"Its been 3 years and I'm still getting innapropriate Drawables from my ex. How the fuck do I end this?!"</p>
+                        <h5>Liam Hemsworth</h5>
+                    </div><!--//content-->
+                </div><!--//item-->
+                <div class="item col-md-4 col-sm-6 col-xs-12">
+                    <div class="icon-holder">
+                        <!-- <i class="fa fa-coffee"></i> -->
+                    </div>
+                    <div class="content">
+                        <!-- <h3 class="sub-title">It's Coloring.</h3> -->
+                        <p>"Just getting in touch to say that I don't recommend sending drawables to randos. Some people are oddly into it."</p>
+                        <h5>Jimmy Kimmel</h5>
+                    </div><!--//content-->
+                </div><!--//item-->          
+                <div>
+                    <!-- <p class="intro text-center"></p> 
+                    <p class="intro text-center">"Daleeeeeee"</p>
+                    <h5>Pit Bull</h5> -->
+                    <div class="content">
+                        <!-- <h3 class="sub-title">Mobile-friendly</h3> -->
+                        <p>"I never get tired of seeing my co-workers rage when opening their Drawables."</p>
+                        <h5>Spike Lee</h5> 
+                    </div>
+                </div>     
+            </div><!--//row-->            
+        <!-- </div>//container -->
+            <!-- <ul class="feature-list list-unstyled"> -->
+                <!-- <li><i class="fa fa-check"></i> Fully responsive</li> -->
+                <!-- <li><i class="fa fa-check"></i> HTML5 + CSS3</li> -->
+                <!-- <li><i class="fa fa-check"></i> Built on <a href="http://getbootstrap.com/" target="_blank">Bootstrap 3.3</a></li> -->
+                <!-- <li><i class="fa fa-check"></i> 400+ FontAwesome icons</li> -->
+                <!-- <li><i class="fa fa-check"></i> 4 colour schemes</li> -->
+                <!-- <li><i class="fa fa-check"></i> LESS files included</li> -->
+                <!-- <li><i class="fa fa-check"></i> Compatible with all modern browsers</li> -->
+            <!-- </ul> -->
+        </div><!--//container-->
+    </section><!--//features-->
+    
+    <!-- ******DOCS****** --> 
+    <section id="docs" class="docs section">
+        <div class="container">
+            <div class="docs-inner">
+            <h2 class="title text-center">FAQ</h2>            
+            <div class="block">
+                <h3 class="sub-title text-center">What is Drawables?</h3>
+                <p>Drawables allows you to doodle on your pics and send them to our pals via Facebook Messenger.</p>
+                <h3>Is This for Real?</h3>
+                <p>Yes.</p>
+                <h3>How does it work?</h3>
+                <p>Too easy.  Download drawables from the app store and color on your pics for your friends.</p>
+                <h3>How much does it cost?</h3>
+                <p>Free.</p>
+                <h3>Why should I download this Snapchat knockoff?</h3>
+                <p>Go fuck yourself.</p>
+                <!-- <p>Below are the details of the custom PrismJS build used in this template. You can <a href="http://prismjs.com/download.html" target="_blank">build your own version</a> via their website should you need to.</p> -->
+                <!-- <ul class="list-unstyled">
+                    <li><strong>Compression level:</strong> Minified</li>
+                    <li><strong>Theme:</strong> Okaidia</li>
+                    <li><strong>Languages:</strong> Markup, CSS, C-like, JavaScript, PHP and Python</li>
+                </ul>
+                <div class="code-block"> -->
+                    <!--//Use Prismjs - http://prismjs.com/index.html#basic-usage -->
+                    <!-- <pre><code class="language-markup"> 
+    &ltp class="my-style"&gt
+      Hello World!
+    &lt/p&gt -->
+                     <!-- </code></pre> -->
+                <!-- </div>//code-block -->
+            <!-- </div>//block -->
+            
+            <!-- <div class="block"> -->
+                <!-- <h3 class="sub-title text-center">CSS</h3> -->
+                <!-- <p>Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus.</p> -->
+                
+                <!-- <div class="code-block"> -->
+                    <!--//Use Prismjs - http://prismjs.com/index.html#basic-usage -->
+                    <!-- <pre> -->
+    <!-- <code class="language-css"> -->
+    <!-- /*    -->
+     <!-- * Template Name: devAid - Responsive Website Template for developers -->
+     <!-- * Version: 1.0 -->
+     <!-- * Author: Xiaoying Riley at 3rd Wave Media -->
+     <!-- * Website: http://themes.3rdwavemedia.com/ -->
+     <!-- * Twitter: @3rdwave_themes -->
+    <!-- */ -->
+    <!-- body { -->
+      <!-- font-family: 'Lato', arial, sans-serif; -->
+      <!-- color: #444444; -->
+      <!-- font-size: 16px; -->
+      <!-- -webkit-font-smoothing: antialiased; -->
+      <!-- -moz-osx-font-smoothing: grayscale; -->
+    <!-- } -->
+    <!-- </code></pre> -->
+                <!-- </div>//code-block -->
+            <!-- </div>//block -->
+            
+            <!-- <div class="block"> -->
+                <!-- <h3 class="sub-title text-center">JavaScript</h3> -->
+                <!-- <p>Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. Lorem ipsum dolor sit amet, consectetuer adipiscing elit ligula eget dolor.</p> -->
+                <!-- <div class="code-block"> -->
+                    <!-- <pre><code class="language-javascript"> -->
+    <!-- if( awesome ){ -->
+        <!-- console.log('This is Awesome'); -->
+    <!-- }else{ -->
+        <!-- $('body').addClass('give-me-awesome'); -->
+    <!-- } -->
+                    <!-- </code></pre> -->
+                <!-- </div>//code-block -->
+            <!-- </div>//block    -->
+            <!-- <div class="block"> -->
+                <!-- <h3 class="sub-title text-center">Drawables.club</h3> -->
+                <!-- <p class="text-center">cheer/delight/horrify</p> -->
+                <!-- <p class="text-center"> -->
+                    <!-- <a class="btn btn-cta-primary" href="https://github.com/twbs/bootstrap" target="_blank">I Need This.</a> -->
+                <!-- </p> -->
+            <!-- </div>//block -->
+            
+            <!-- </div>//docs-inner          -->
+        <!-- </div>//container -->
+    <!-- </section><!--//features-->
+    
+         
+                        
+                    </div><!--//btn-container-->
+                </div><!--//cta-container-->
+            </div><!--//license-inner-->
+        </section>
+    <!-- ******LICENSE****** --> 
+    <section id="license" class="license section">
+        <div class="container">
+            <h2 class="title text-center">Thank you</h2> 
+            <!-- <div class="license-inner"> -->
+            <img src='assets/images/logos.png' class="title text-center"/>
+            <!-- <h2 class="title text-left">Used</h2> -->
+                <!-- <div class="info"> -->
+                    <!-- </div>//container -->
+                <!-- <p>This Bootstrap theme is made by UX designer <a href="https://www.linkedin.com/in/xiaoying" target="_blank">Xiaoying Riley</a> at 3rd Wave Media for developers and is <strong>100% FREE</strong> under the <a href="https://creativecommons.org/licenses/by/3.0/" target="_blank">Creative Commons Attribution 3.0 License (CC BY 3.0)</a></p> -->
+                    <!-- <p><strong>[Tip for developers]:</strong> If your project is open source, you might want to put a <a href="https://www.paypal.com/us/cgi-bin/?cmd=_donate-intro-outside" target="_blank">PayPal "Donate" button</a> below so your users can express their gratitude. If your project is commercial, you can put a <a href="https://www.paypal.com/us/cgi-bin/webscr?cmd=_singleitem-intro-outside" target="_blank">PayPal "Buy Now" button</a> instead.</p> -->
+                    
+                <!-- </div>//info -->
+                <!-- <div class="cta-container"> -->
+                    <!-- <div class="speech-bubble"> -->
+                    <!-- <ul class="feature-list list-unstyled"> -->
+                <!-- <li><i class="fa fa-check"></i> Facebook Login</li> -->
+                <!-- <li><i class="fa fa-check"></i> HTML5 + CSS3</li> -->
+                <!-- <li><i class="fa fa-check"></i> Built on Bootstrap 3.3</a></li> -->
+                <!-- <li><i class="fa fa-check"></i> React </li> -->
+                <!-- <li><i class="fa fa-check"></i> iOS</li> -->
+                <!-- <li><i class="fa fa-check"></i> Facebook Messenger</li> -->
+                <!-- <li><i class="fa fa-check"></i> Parse</li> -->
+                        <!-- <p class="intro">If you are feeling generous and want to show your support to Xiaoying, you can buy her a beer or coffee via the PayPal donate button below. :)</p> -->
+                        <!-- <div class="icon-holder  text-center"><i class="fa fa-smile-o"></i></div> -->
+                    <!-- </div>//speech-bubble -->
+                    <!-- <div class="btn-container  text-center"> -->
+                        <!--//You need to generate your own PayPal button - https://www.paypal.com/us/cgi-bin/?cmd=_donate-intro-outside -->         
+                        <!--PayPal generated code starts-->
+                        <!-- <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top"> -->
+                        <!-- <input type="hidden" name="cmd" value="_s-xclick"> -->
+                        <!-- <input type="hidden" name="hosted_button_id" value="Y46LJNXGAVVWW"> -->
+                        <!-- <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donate_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!"> -->
+                        <!-- <img alt="" border="0" src="https://www.paypalobjects.com/en_GB/i/scr/pixel.gif" width="1" height="1"> -->
+                        <!-- </form> -->
+                        <!--//PayPal generated code ends-->               
+        </div><!--//container-->
+    </section><!--//how-->
+    
+    <!-- ******CONTACT****** --> 
+    <section id="contact" class="contact section has-pattern">
+        <div class="container">
+            <div class="contact-inner">
+                <h2 class="title  text-center">Drawables<span style="font-size:12pt">.club</h2>
+                <p class="intro  text-center"> cheer/delight/horrify</p>
+                <p class="text-center">
+                    <!-- <a class="btn btn-cta-primary" href="https://github.com/twbs/bootstrap" target="_blank">I Need This.</a> -->
+                    <a style="color:white" class="btn btn-cta-primary" href="https://itunes.apple.com/us/artist/apple/id284417353?mt=12" target="_blank">I Need This.</a>
+                </p>
+                <!-- <div class="author-message">                       -->
+                    <!-- <div class="profile"> -->
+                        <!-- <img class="img-responsive" src="assets/images/profile.png" alt="" /> -->
+                    <!-- </div>//profile -->
+                    <!-- <div class="speech-bubble"> -->
+                        <!-- <h3 class="sub-title">Want to get more freebies in the future?</h3> -->
+                        <!-- <p>I tweet about #UX and #webdev related resources/content at <a href="https://twitter.com/3rdwave_themes" target="_blank">@3rdwave_themes</a>  -->
+                        <!-- <p>If you like what I do, you can follow me on twitter and I will keep you informed about my next free template there :)</p> -->
+                        <!-- <p><strong>[Tip for developers]:</strong> If you take on freelance work you can put a tailored message here about your availability to attract potential clients. Be creative and good luck!</p>  -->
+                        <!-- <div class="source"> -->
+                            <!-- <span class="name"><a href="https://twitter.com/3rdwave_themes" target="_blank">Xiaoying Riley</a></span> -->
+                            <!-- <br /> -->
+                            <!-- <span class="title">UX/UI Designer</span> -->
+                        <!-- </div>//source -->
+                    <!-- </div><!--//speech-bubble-->
+                </div><!--//author-message-->
+                <div class="clearfix"></div>
+                <div class="info text-center">
+                    <h4 class="sub-title">Get Connected</h4>
+                    <ul class="social-icons list-inline">
+                        <li><a href="" target="_blank"><i class="fa fa-twitter"></i></a></li>
+                        <li><a href="https://www.facebook.com/drawables.club" target="_blank"><i class="fa fa-facebook"></i></a></li>
+                        <!-- <li><a href="https://www.linkedin.com/in/xiaoying"><i class="fa fa-linkedin"></i></a></li> -->
+                        <li><a href=""><i class="fa fa-instagram"></i></a></li>  
+                        <!-- <li><a href="https://dribbble.com/Xiaoying"><i class="fa fa-dribbble"></i></a></li>    -->
+                        <li class="last"><a href="mailto: lc@tsl.io"><i class="fa fa-envelope"></i></a></li>              
+                    </ul>
+                </div><!--//info-->
+            </div><!--//contact-inner-->
+        </div><!--//container-->
+    </section><!--//contact-->  
+          <div id="react-root">
       <h1>If you see this, something is broken.</h1>
     </div>
-    <script type="text/javascript" src="build/main.js"></script>
-  </body>
-</html>
+    <!-- ******FOOTER****** --> 
+    <footer class="footer">
+        <div class="container text-center">
+            <small class="copyright">&copy; Drawables</small>
+        </div><!--//container-->
+    </footer><!--//footer-->
+     
+    <!-- Javascript -->          
+    <script type="text/javascript" src="assets/plugins/jquery-1.11.1.min.js"></script>
+    <script type="text/javascript" src="assets/plugins/jquery-migrate-1.2.1.min.js"></script>    
+    <script type="text/javascript" src="assets/plugins/jquery.easing.1.3.js"></script>   
+    <script type="text/javascript" src="assets/plugins/bootstrap/js/bootstrap.min.js"></script>     
+    <script type="text/javascript" src="assets/plugins/jquery-scrollTo/jquery.scrollTo.min.js"></script> 
+    <script type="text/javascript" src="assets/plugins/prism/prism.js"></script>    
+    <script type="text/javascript" src="assets/js/devaidmain.js"></script>   
+        <script type="text/javascript" src="build/main.js"></script>    
+</body>
+</html> 
+

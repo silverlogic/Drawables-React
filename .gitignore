@@ -30,7 +30,6 @@ coverage
 .lock-wscript
 
 # Compiled binary addons (http://nodejs.org/api/addons.html)
-build/Release
 
 # Dependency directory
 # https://www.npmjs.org/doc/misc/npm-faq.html#should-i-check-my-node_modules-folder-into-git
@@ -146,7 +145,6 @@ sftp-config.json
 ## Specific to RubyMotion:
 .dat*
 .repl_history
-build/
 
 ## Documentation cache and generated files:
 /.yardoc/
